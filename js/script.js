@@ -80,4 +80,16 @@ const teamContainer = document.getElementById('team-members-area');
 for (let i = 0; i < team.length; i++) {
     let teamMember = team[i];
     console.log(`name: ${teamMember.name} - role: ${teamMember.role} - picture: ${teamMember.picture}`);
+
+    // MILESTONE 2:
+    // Stampare le stesse informazioni su DOM sottoforma di stringhe
+    teamContainer.innerHTML += `<div class="card-container">
+                                    <div class="card">
+                                        <div class="team-mate-info">Name: ${teamMember.name}</div>
+                                        <div class="team-mate-info">Role: ${teamMember.role}</div>
+                                        <div class="mb-n4">
+                                            <img src="img/${teamMember.picture}"/>
+                                        </div>
+                                    </div>
+                                </div>`
 }
