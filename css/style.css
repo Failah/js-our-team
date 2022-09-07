@@ -8,6 +8,7 @@
 
 body {
     font-family: sans-serif;
+    background-color: goldenrod;
 }
 
 img {
@@ -17,12 +18,37 @@ img {
 
 /* utilities */
 
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 /* contents */
 
+#team-members-area {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.card-container {
+    width: calc(100% / 3);
+    padding: 10px;
+}
+
+.card {
+    background-color: bisque;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.team-mate-info {
+    padding: 8px;
+}
+
+.mb-n4 {
+    margin-bottom: -4px;
+}
 
 
 /* effects */
